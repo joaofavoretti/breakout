@@ -4,7 +4,7 @@ A classic Breakout game implementation in Go using Raylib, featuring clean archi
 
 ## Demo
 
-![Breakout Game Demo](assets/demo.mp4)
+https://github.com/user-attachments/assets/11c36f54-8198-478e-bf56-eb1c4ea645b9
 
 ## Screenshots
 
