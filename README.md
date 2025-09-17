@@ -1,28 +1,26 @@
-# 🎮 Breakout Game
+# Breakout Game
 
-A classic Breakout game implementation in Go using Raylib.
+A classic Breakout game implementation in Go using Raylib, featuring clean architecture and modern Go practices.
 
-## 📺 Demo
+## Demo
 
-<!-- Add your video demo here -->
-*Video demo coming soon...*
+![Breakout Game Demo](assets/demo.mp4)
 
-## 📸 Screenshots
+## Screenshots
 
-<!-- Add your game screenshots here -->
-*Screenshots coming soon...*
+![Breakout Game Screenshot](assets/screenshot.png)
 
-## ✨ Features
+## Features
 
-- 🎯 **Classic Breakout Gameplay** - Destroy all bricks to advance levels
-- 🎨 **Colorful Brick System** - Different colored bricks with varying point values
-- ⚡ **Dynamic Difficulty** - Ball speed increases as you progress
-- 🎵 **Sound Effects** - Audio feedback for paddle and brick collisions
-- 🎮 **Responsive Controls** - Smooth paddle movement with variable speed
-- 📊 **Scoring System** - Points based on brick colors and positions
-- 🏆 **Multiple Levels** - Progress through challenging levels
+- **Classic Breakout Gameplay** - Destroy all bricks to advance levels
+- **Colorful Brick System** - Different colored bricks with varying point values
+- **Dynamic Difficulty** - Ball speed increases as you progress
+- **Sound Effects** - Audio feedback for paddle and brick collisions
+- **Responsive Controls** - Smooth paddle movement with variable speed
+- **Scoring System** - Points based on brick colors and positions
+- **Multiple Levels** - Progress through challenging levels
 
-## 🎮 Controls
+## Controls
 
 | Key | Action |
 |-----|--------|
@@ -31,7 +29,7 @@ A classic Breakout game implementation in Go using Raylib.
 | `Space` | Start game / Resume from pause |
 | `R` | Restart game (when game over) |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -63,37 +61,37 @@ make clean    # Clean build artifacts
 make check    # Run formatting, vetting, and tests
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 This project showcases professional Go development practices with a clean, modular architecture:
 
 ```
 internal/
-├── game/          # 🎯 Main game logic and state management
-├── entities/      # 🎲 Game entities (Ball, Paddle, Brick, etc.)
-├── physics/       # ⚡ Collision detection engine
-├── audio/         # 🔊 Sound management
-├── renderer/      # 🎨 Rendering utilities
-├── types/         # 📋 Common types and interfaces
-└── config/        # ⚙️ Configuration management
+├── game/          # Main game logic and state management
+├── entities/      # Game entities (Ball, Paddle, Brick, etc.)
+├── physics/       # Collision detection engine
+├── audio/         # Sound management
+├── renderer/      # Rendering utilities
+├── types/         # Common types and interfaces
+└── config/        # Configuration management
 ```
 
-### 🎯 Design Principles
+### Design Principles
 
-- **🔧 Separation of Concerns** - Each package has a single responsibility
-- **🚫 No Global State** - All state is properly encapsulated and dependency-injected
-- **🔌 Interface-Based Design** - Flexible interfaces for collision detection and rendering
-- **⚠️ Proper Error Handling** - Comprehensive error handling for resource loading
-- **🧹 Resource Management** - Clean resource cleanup with defer patterns
-- **✅ Testable Code** - Unit tests demonstrate component isolation
+- **Separation of Concerns** - Each package has a single responsibility
+- **No Global State** - All state is properly encapsulated and dependency-injected
+- **Interface-Based Design** - Flexible interfaces for collision detection and rendering
+- **Proper Error Handling** - Comprehensive error handling for resource loading
+- **Resource Management** - Clean resource cleanup with defer patterns
+- **Testable Code** - Unit tests demonstrate component isolation
 
-## 🎲 Game Mechanics
+## Game Mechanics
 
 ### Brick System
-- **🔴 Red Bricks** (Top rows): 7 points, trigger speed increase on first hit
-- **🟠 Orange Bricks**: 5 points, trigger speed increase on first hit  
-- **🟢 Green Bricks**: 3 points
-- **🟡 Yellow Bricks** (Bottom rows): 1 point
+- **Red Bricks** (Top rows): 7 points, trigger speed increase on first hit
+- **Orange Bricks**: 5 points, trigger speed increase on first hit  
+- **Green Bricks**: 3 points
+- **Yellow Bricks** (Bottom rows): 1 point
 
 ### Speed Increases
 - First red/orange brick hit
@@ -105,7 +103,7 @@ internal/
 - **Win**: Clear all bricks in all levels
 - **Lose**: Ball falls below paddle
 
-## 🧪 Testing
+## Testing
 
 The modular architecture enables comprehensive unit testing:
 
@@ -122,30 +120,30 @@ go test ./internal/entities/
 
 Example test output:
 ```
-✅ TestBrickGetValue - Verifies point values by row
-✅ TestBrickColorChecks - Tests color identification methods
-✅ TestCreateLevelBricks - Validates level generation
+TestBrickGetValue - Verifies point values by row
+TestBrickColorChecks - Tests color identification methods
+TestCreateLevelBricks - Validates level generation
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - **[raylib-go](https://github.com/gen2brain/raylib-go)** - Go bindings for Raylib graphics library
 - **Go 1.21+** - Modern Go features and performance
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 The clean architecture makes it easy to add:
 
-- 🎁 **Power-ups** - Speed boost, multi-ball, larger paddle
-- 🏆 **High Scores** - Persistent leaderboard system
-- ⚙️ **Settings Menu** - Configurable difficulty and controls
-- 🎵 **Background Music** - Enhanced audio experience
-- 🌈 **Visual Effects** - Particle systems and animations
-- 🎮 **Game Modes** - Time attack, survival mode
-- 🔧 **Level Editor** - Custom level creation
-- 🌐 **Multiplayer** - Local or network multiplayer support
+- **Power-ups** - Speed boost, multi-ball, larger paddle
+- **High Scores** - Persistent leaderboard system
+- **Settings Menu** - Configurable difficulty and controls
+- **Background Music** - Enhanced audio experience
+- **Visual Effects** - Particle systems and animations
+- **Game Modes** - Time attack, survival mode
+- **Level Editor** - Custom level creation
+- **Multiplayer** - Local or network multiplayer support
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -153,11 +151,11 @@ The clean architecture makes it easy to add:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Original Breakout game by Atari (1976)
 - [Raylib](https://www.raylib.com/) for the excellent graphics library
